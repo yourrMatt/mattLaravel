@@ -1,7 +1,7 @@
 <aside id="layout-menu" class="d-flex flex-column bg-dark sticky-top" style="width: 260px; height: 100vh; flex-shrink: 0">
   
   <div class="d-flex align-items-center justify-content-between px-3 py-3 border-bottom border-secondary">
-    <a href="index.html" class="d-flex align-items-center text-decoration-none">
+    <a href="/dashboard" class="d-flex align-items-center text-decoration-none">
       <img src="img/logo.jpg" alt="Logo" style="width: 60px; height: 60px; border-radius: 50%;">
       <span class="text-white fw-bold ms-2 fs-5">Admin</span>
     </a>
