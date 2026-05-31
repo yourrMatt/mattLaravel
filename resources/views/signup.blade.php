@@ -27,7 +27,7 @@
             </div>
             <div class="mb-3 text-center">
                 <button type="submit" name="signup" class="btn btn-outline-warning px-5 w-100 my-3" style=" height: 40px;">Sign up</button>
-                <a href="{{ route('login') }}" class="mt-3 text-center">Already have an account?</a>
+                <a href="/login" class="mt-3 text-center">Already have an account?</a>
             </div>
         </form>
     </div>
