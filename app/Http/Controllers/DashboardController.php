@@ -43,7 +43,7 @@ class DashboardController extends Controller
         if ($nextClass) {
             $start = $nextClass['start_carbon'];
             $countdown = $now->lt($start)
-                ? 'in ' . $now->diffForHumans($start, ['syntax' => Carbon::DIFF_RELATIVE_TO_NOW, 'parts' => 1])
+                ? $start->diffForHumans()
                 : 'Ongoing now';
         }
 
