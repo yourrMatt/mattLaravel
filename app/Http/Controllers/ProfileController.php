@@ -25,6 +25,8 @@ class ProfileController extends Controller
                 'profile_picture'=>$filename
             ]);
         }
+
+        session(['user' => $user->fresh()]);
         return back()->with('success', 'Profile updated');
     }
 
@@ -39,7 +41,7 @@ class ProfileController extends Controller
         ]);
     
         if ($request->filled('currentPassword')) {
-            // Verify current password is correct
+            
             if (!Hash::check($request->currentPassword, $user->password)) {
                 return back()->with('error', 'Current password is incorrect.');
             
@@ -53,6 +55,7 @@ class ProfileController extends Controller
             ]);
         }
         
+        session(['user' => $user->fresh()]);
         return back()->with('success', 'Profile updated successfully.');
     }
 }
